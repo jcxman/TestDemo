@@ -1,0 +1,8 @@
+<div class="container-fluid">
+
+  <div ng-controller="exampleCtrl" ng-mouseleave="hero=true">
+    <img class="thumbnail_media" src="./templates/thumbnail.png" ng-mouseenter="hero=false" ng-click="uploadPackImage()">
+    <img class="thumbnail_media" src="./templates/thumbnail.png" ng-hide="hero" ng-click="uploadHeroImage()">
+  </div>
+</div>
+

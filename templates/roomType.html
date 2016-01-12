@@ -1,0 +1,61 @@
+<div class="container-fluid">
+
+  <div class="roomTypePageView" ng-controller="exampleCtrl">
+    <img class="thumbnail_media" src="./templates/thumbnail.png" ng-click="uploadPackImage()">
+  </div>
+
+  <div class="assetspanel">
+    <div class="panel panel-default">
+      <div class="panel-heading">Assets Panel</div>
+      <div class="panel-body">
+        <span>
+          <input class="assetspanelInput" type="search" placeholder="Search by tags,file names or status">
+
+          <div class="dropdown assetspanelDropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="true">
+              Thumbnails
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li aria-selected="true"><a href="#">Thumbnails</a></li>
+              <li><a href="#">List View</a></li>
+            </ul>
+          </div>
+        </span>
+    </div>
+
+      <div class="panel-heading">Room Types</div>
+      <div class="panel-body">
+        <input type="file">
+      </div>
+      <div class="panel-body">
+        <div class="assetsLabel">
+          <div class="assetsLabelImageL"></div>
+          <div class="assetsLabelImageR"></div>
+          <span class="assetsLabelLabel">Assets Label</span>
+          <div class="dropdown assetsLabelDropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="true">
+              Available actions
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Remove Image</a></li>
+              <li><a href="#">Edit Image Label</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-heading">Packages</div>
+      <div class="panel-body">Panel Content</div>
+
+      <div class="panel-heading">Video Media</div>
+      <div class="panel-body">Panel Content</div>
+
+    </div>
+  </div>
+</div>
+
+
