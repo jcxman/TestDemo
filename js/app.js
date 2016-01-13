@@ -2,40 +2,52 @@
  * Created by yhuang on 1/8/2016.
  */
 
-var example = angular.module('example', ['ui.router']);
+var example = angular.module('example', ['ui.router','colorpicker.module']);
 
 example.config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state("configuration", {
       url: "/configuration",
-      templateUrl: "templates/configuration.html"
+      templateUrl: "components/configuration/configuration.html"
     })
     .state("media", {
       url: "/media",
-      templateUrl: "templates/media.html"
+      templateUrl: "components/media/media.html"
     })
     .state("reporting", {
       url: "/reporting",
-      templateUrl: "templates/reporting.html"
+      templateUrl: "components/reporting/reporting.html"
     })
     .state("translation", {
       url: "/translation",
-      templateUrl: "templates/translation.html"
+      templateUrl: "components/translation/translation.html"
     })
     .state("media.roomType",{
       url:"/roomType",
-      templateUrl:"templates/roomType.html"
+      templateUrl:"components/media/roomType/roomType.html"
     })
     .state("media.packages",{
       url:"/packages",
-      templateUrl:"templates/packages.html"
+      templateUrl:"components/media/packages/packages.html"
+    })
+    .state("media.branding",{
+      url:"/branding",
+      templateUrl:"components/media/branding/branding.html"
+    })
+    .state("media.groups",{
+      url:"/groups",
+      templateUrl:"components/media/groups/groups.html"
     })
     .state("media.iconography",{
       url:"/iconography",
-      templateUrl:"templates/iconography.html"
+      templateUrl:"components/media/iconography/iconography.html"
+    })
+	.state("templates",{
+      url:"/templates",
+      templateUrl:"templates/templates.html"
     });
 
-  $urlRouterProvider.otherwise("/setting/profile");
+  $urlRouterProvider.otherwise("/");
 })
   .controller("exampleCtrl",function($scope){
     $scope.hero = true;
