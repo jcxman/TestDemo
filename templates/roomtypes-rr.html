@@ -1,0 +1,101 @@
+GET:
+
+	API Call to get all the rooms via hotel code
+Request
+{
+   "username" : "my_username",
+   "password" : "my_password",
+   "validation-factors" : {
+      "validationFactors" : [
+         {
+            "name" : "remote_address",
+            "value" : "127.0.0.1"
+         }
+      ]
+   },
+   "hotel-code" : "343433",
+   "type" : "rooms-request"
+}
+
+Response
+
+{
+      "Rooms" : {
+		 "38498" : "Room Name 1",
+		 "48498" : "Room Name 2",
+		 "58498" : "Room Name 3",
+		 "68498" : "Room Name 4",
+		 "78498" : "Room Name 5",
+		 "88498" : "Room Name 6",
+      }
+}
+
+
+Merge Console Room_Assets with returned Rooms
+	
+Request
+{
+   "username" : "my_username",
+   "password" : "my_password",
+   "validation-factors" : {
+      "validationFactors" : [
+         {
+            "name" : "remote_address",
+            "value" : "127.0.0.1"
+         }
+      ]
+   },
+   "room-codes" : [
+			38498,
+			43399,
+			39599,
+			30349
+   ],
+   "type" : "rooms-assets-request"
+}
+	
+Response
+
+{
+	"rooms" : {
+         "598498" : [
+			"main-image" : "img/room598498",
+			"secondary-images" [
+						"img/room598498-2",
+						"img/room598498-3",
+						'img/room598498-4"
+				]
+			
+			],
+         "698498" : [
+			"main-image" : "img/room598498",
+			"secondary-images" [
+						"img/room598498-2",
+						"img/room598498-3",
+						'img/room598498-4"
+				]
+			
+			],
+         "798498" : [
+			"main-image" : "img/room598498",
+			"secondary-images" [
+						"img/room598498-2",
+						"img/room598498-3",
+						'img/room598498-4"
+				]
+			
+			],
+         "898498" : [
+			"main-image" : "img/room598498",
+			"secondary-images" [
+						"img/room598498-2",
+						"img/room598498-3",
+						'img/room598498-4"
+				]
+			
+			],
+      }
+}
+
+
+

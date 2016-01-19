@@ -1,117 +1,122 @@
-<div class="container-fluid">
-  <div class="roomTypePageView col-lg-6" ng-controller="exampleCtrl">
-    <img class="thumbnail_media" src="./templates/thumbnail.png" ng-click="uploadPackImage()">
+<div class="container-fluid roomTypePage">
+  <div >
+    <span>Default Page View</span>
+    <span><button><img src="./img/u93.png"></button></span>
   </div>
+  <br>
+  <div  ng-repeat="n in [1,2, 3, 4, 5, 6, 7]">
+    <div class="roomTypePageView" roomtype-Pageview="true"></div>
+  </div>
+  <!--page-view is a custom directive in roomTypePageView.js-->
 </div>
 
-<div class="assetspanel">
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <a class="panel-title" data-parent="#accordion">
-          Assets Panel
-        </a>
-      </div>
-      <div id="accordionOne">
-        <div class="panel-body">
-          <div class="assetspanelTitleInput"><input type="search" placeholder="Search by tags,file names or status">
-            <select class="assetspanelTitleSelect">
-              <option value="">Thumbnails</option>
-              <option value="">List Views</option>
-            </select></div>
-        </div>
-      </div>
+<div assetspanel-roomtype="true"></div>
+<!--<div class="assetspanel">-->
+  <!--<div class="panel-group" id="accordion">-->
+    <!--<div class="panel panel-default">-->
+      <!--<div class="panel-heading">-->
+        <!--<a class="panel-title" data-parent="#accordion">-->
+          <!--Assets Panel-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div id="accordionOne">-->
+        <!--<div class="panel-body">-->
+          <!--<div class="assetspanelTitleInput"><input type="search" placeholder="Search by tags,file names or status">-->
+            <!--<select class="assetspanelTitleSelect">-->
+              <!--<option value="">Thumbnails</option>-->
+              <!--<option value="">List Views</option>-->
+            <!--</select></div>-->
+        <!--</div>-->
+      <!--</div>-->
 
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#accordionTwo">
-            Room Types
-          </a>
-        </h4>
-      </div>
-      <div id="accordionTwo" class="panel-collapse collapse">
-        <div>
-          <div class="panel-body">
-            <input type="file">
-          </div>
-          <div class="assetsLabel panel-body">
-            <div id="assetsLabelbtn">
-              <span><a href="">Size</a></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-              <span><a href="">Detail Images</a></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-              <span><a href="">Hero Images</a></span>
-            </div>
-            <br>
-            <div ng-repeat="n in [1, 2, 3, 4, 5]">
-              <div class="assetsLabelLine">
-                <div class="assetsLabelImage"></div>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <div class="assetsLabelLabel">Assets Label</div>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <div class="dropdown assetsLabelDropdown">
-                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="true">
-                    Available actions
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Remove Image</a></li>
-                    <li><a href="#">Edit Image Label</a></li>
-                  </ul>
-                </div>
-              </div>
-              <br>
-            </div>
+      <!--<div class="panel-heading">-->
+        <!--<h4 class="panel-title">-->
+          <!--<a data-parent="#accordion" href="#accordionTwo">-->
+            <!--Room Types-->
+          <!--</a>-->
+        <!--</h4>-->
+      <!--</div>-->
+      <!--<div id="accordionTwo">-->
+        <!--<div>-->
+          <!--<div class="panel-body">-->
+            <!--<input type="file">-->
+          <!--</div>-->
+          <!--<div class="assetsLabel panel-body" >-->
+            <!--<div id="assetsLabelbtn">-->
+              <!--<span><a href="">Size</a></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+              <!--<span><a href="">Detail Images</a></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+              <!--<span><a href="">Hero Images</a></span>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div ng-repeat="n in [1, 2, 3, 4, 5, 6, 7, 8]">-->
+              <!--<div class="assetsLabelLine">-->
+                <!--<div class="assetsLabelImage"></div>-->
+                <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+                <!--<div class="assetsLabelLabel">Assets Label</div>-->
+                <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+                <!--<div class="dropdown assetsLabelDropdown">-->
+                  <!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"-->
+                          <!--aria-haspopup="true" aria-expanded="true">-->
+                    <!--Available actions-->
+                    <!--<span class="caret"></span>-->
+                  <!--</button>-->
+                  <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+                    <!--<li><a href="#">Remove Image</a></li>-->
+                    <!--<li><a href="#">Edit Image Label</a></li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<br>-->
+            <!--</div>-->
 
-          </div>
-        </div>
-      </div>
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
 
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#accordionThree">
-            Packages
-          </a>
-        </h4>
-      </div>
-      <div id="accordionThree" class="panel-collapse collapse">      <!-- panel body -->
-        <div>
-          <div class="panel-body">
-            <input type="file">
-          </div>
-          <div class="assetsLabel panel-body">
-            <div id="assetsLabelbtn">
-              <span><a href="">Size</a></span>&nbsp&nbsp&nbsp&nbsp
-              <span><a href="">Detail Images</a></span>&nbsp&nbsp&nbsp&nbsp
-              <span><a href="">Hero Images</a></span>
-            </div>
-            <br>
-            <div ng-repeat="n in [1,2,3,4,5]">
-              <div class="assetsLabelLine">
-                <div class="assetsLabelImage"></div>
-                &nbsp&nbsp&nbsp&nbsp
-                <div class="assetsLabelLabel">Assets Label</div>
-                &nbsp&nbsp&nbsp&nbsp
-                <div class="dropdown assetsLabelDropdown">
-                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                          data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="true">
-                    Available actions
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Remove Image</a></li>
-                    <li><a href="#">Edit Image Label</a></li>
-                  </ul>
-                </div>
-              </div>
-              <br>
-            </div>
+      <!--<div class="panel-heading">-->
+        <!--<h4 class="panel-title">-->
+          <!--<a data-toggle="collapse" data-parent="#accordion" href="#accordionThree">-->
+            <!--Packages-->
+          <!--</a>-->
+        <!--</h4>-->
+      <!--</div>-->
+      <!--<div id="accordionThree" class="panel-collapse collapse">      &lt;!&ndash; panel body &ndash;&gt;-->
+        <!--<div>-->
+          <!--<div class="panel-body">-->
+            <!--<input type="file">-->
+          <!--</div>-->
+          <!--<div class="assetsLabel panel-body">-->
+            <!--<div id="assetsLabelbtn">-->
+              <!--<span><a href="">Size</a></span>&nbsp&nbsp&nbsp&nbsp-->
+              <!--<span><a href="">Detail Images</a></span>&nbsp&nbsp&nbsp&nbsp-->
+              <!--<span><a href="">Hero Images</a></span>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div ng-repeat="n in [1,2,3,4,5]">-->
+              <!--<div class="assetsLabelLine">-->
+                <!--<div class="assetsLabelImage"></div>-->
+                <!--&nbsp&nbsp&nbsp&nbsp-->
+                <!--<div class="assetsLabelLabel">Assets Label</div>-->
+                <!--&nbsp&nbsp&nbsp&nbsp-->
+                <!--<div class="dropdown assetsLabelDropdown">-->
+                  <!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"-->
+                          <!--data-toggle="dropdown"-->
+                          <!--aria-haspopup="true" aria-expanded="true">-->
+                    <!--Available actions-->
+                    <!--<span class="caret"></span>-->
+                  <!--</button>-->
+                  <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+                    <!--<li><a href="#">Remove Image</a></li>-->
+                    <!--<li><a href="#">Edit Image Label</a></li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<br>-->
+            <!--</div>-->
 
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</div>
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->

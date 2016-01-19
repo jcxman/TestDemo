@@ -1,27 +1,11 @@
-<div class="row">
-<div class="col-lg-12">
-  <div class="page-header">
-    <h3>Please select your images!</h3>
+<div class="container-fluid packagesPage">
+  <div>
+    <span>Default Page View</span>
+    <span><button><img src="./img/u93.png"></button></span>
   </div>
-
-
-  <div ng-controller="exampleCtrl" ng-mouseleave="hero=true" >
-    <div uib-popover-template="dynamicPopover.templateUrl" popover-trigger="mouseenter">
-      <img class="thumbnail_media" src="./templates/thumbnail.png" uib-popover-template="dynamicPopover.templateUrl" popover-trigger="click;$event.stopPropagation()"  >
-    </div>
-
-    <script type="text/ng-template" id="myPopoverTemplate.html">
-      <img class="thumbnail_media" src="./templates/thumbnail.png">
-    </script>
-
-
-
-
+  <br>
+  <div  ng-repeat="n in [1,2, 3, 4, 5, 6, 7]">
+    <div class="packagesPageView" packages-Pageview="true"></div>
   </div>
-
-
-
-
-
-</div>
+  <!--page-view is a custom directive in roomTypePageView.js-->
 </div>

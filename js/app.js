@@ -2,7 +2,7 @@
  * Created by yhuang on 1/8/2016.
  */
 
-var example = angular.module('example', ['ui.router','colorpicker.module','ngAnimate','ui.bootstrap']);
+var example = angular.module('example', ['ui.router','colorpicker.module']);
 
 example.config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -50,36 +50,6 @@ example.config(function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise("/");
 })
   .controller("exampleCtrl",function($scope){
-    $scope.hero = true;
-    $scope.dynamicPopover = {
-      content: 'Hello, World!',
-      templateUrl: 'myPopoverTemplate.html',
-      title: 'Title'
-    };
-        $scope.testUrl = 'myPopoverTemplate.html';
-    $scope.placement = {
-      options: [
-        'top',
-        'top-left',
-        'top-right',
-        'bottom',
-        'bottom-left',
-        'bottom-right',
-        'left',
-        'left-top',
-        'left-bottom',
-        'right',
-        'right-top',
-        'right-bottom'
-      ],
-      selected: 'top'
-    };
-    $scope.uploadHeroImage = function () {
-      alert("Please set the 'HERO' image!");
-    };
 
-    $scope.uploadPackImage = function () {
-      alert("Please set the 'Package' image!");
-    }
 
   });
