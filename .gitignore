@@ -82,3 +82,4 @@ archive/
 etc/
 .svn
 .tmp
+/nbproject/private/
