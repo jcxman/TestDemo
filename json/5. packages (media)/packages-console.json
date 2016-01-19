@@ -1,0 +1,40 @@
+{
+	"Packages" : {
+         "598498" : [
+			"main-image" : "img/room598498",
+			"secondary-images" [
+						"img/room598498-2",
+						"img/room598498-3",
+						'img/room598498-4"
+				]
+			
+			],
+         "698498" : [
+			"main-image" : "img/room598498",
+			"secondary-images" [
+						"img/room598498-2",
+						"img/room598498-3",
+						'img/room598498-4"
+				]
+			
+			],
+         "798498" : [
+			"main-image" : "img/room598498",
+			"secondary-images" [
+						"img/room598498-2",
+						"img/room598498-3",
+						'img/room598498-4"
+				]
+			
+			],
+         "898498" : [
+			"main-image" : "img/room598498",
+			"secondary-images" [
+						"img/room598498-2",
+						"img/room598498-3",
+						'img/room598498-4"
+				]
+			
+			],
+      }
+}

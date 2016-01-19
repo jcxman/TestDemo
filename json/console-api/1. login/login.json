@@ -1,0 +1,31 @@
+{
+   "name" : "my_username",
+   "first-name" : "My",
+   "last-name" : "Username",
+   "display-name" : "My Username",
+   "email" : "user@example.test",
+   "active" : true,
+   "roll" : travelclickadmin
+   "attributes" : {
+      "hotels" : {
+         "598498" {
+			"hotel-name" : "Example Hotel ABC 1",
+			},
+         "598498" {
+			"hotel-name" : "Example Hotel ABC 1",
+			},
+         "598498" {
+			"hotel-name" : "Example Hotel ABC 1",
+			},
+         "598498" {
+			"hotel-name" : "Example Hotel ABC 1",
+			},
+         "598498" {
+			"hotel-name" : "Example Hotel ABC 1",
+			},
+         "598498" {
+			"hotel-name" : "Example Hotel ABC 1",
+			},
+      }
+   }
+}
