@@ -50,14 +50,6 @@ example.config(function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise("/");
 })
   .controller("exampleCtrl",function($scope){
-    $scope.hero = true;
 
-    $scope.uploadHeroImage = function () {
-      alert("Please set the 'HERO' image!");
-    };
-
-    $scope.uploadPackImage = function () {
-      alert("Please set the 'Package' image!");
-    }
 
   });

@@ -1,0 +1,28 @@
+{
+      "translations" : {
+		"1" {
+			"name" : "label1",
+			"description" : "lorem ipsum dollar sit"
+		},
+		"2" {
+			"name" : "label1",
+			"description" : "lorem ipsum dollar sit"
+		},
+		"3" {
+			"name" : "label1",
+			"description" : "lorem ipsum dollar sit"
+		},
+		"4" {
+			"name" : "label1",
+			"description" : "lorem ipsum dollar sit"
+		},
+		"5" {
+			"name" : "label1",
+			"description" : "lorem ipsum dollar sit"
+		},
+		"6" {
+			"name" : "label1",
+			"description" : "lorem ipsum dollar sit"
+		},
+      }
+}

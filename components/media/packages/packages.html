@@ -1,14 +1,11 @@
-<div class="row">
-<div class="col-lg-12">
-  <div class="page-header">
-    <h3>Please select your images!</h3>
+<div class="container-fluid packagesPage">
+  <div>
+    <span>Default Page View</span>
+    <span><button><img src="./img/u93.png"></button></span>
   </div>
-
-
-  <div ng-controller="exampleCtrl" ng-mouseleave="hero=true">
-    <img class="thumbnail_media" src="./templates/thumbnail.png" ng-mouseenter="hero=false" ng-click="uploadPackImage()">
-    <img class="thumbnail_media" src="./templates/thumbnail.png" ng-hide="hero" ng-click="uploadHeroImage()">
+  <br>
+  <div  ng-repeat="n in [1,2, 3, 4, 5, 6, 7]">
+    <div class="packagesPageView" packages-Pageview="true"></div>
   </div>
-
-</div>
+  <!--page-view is a custom directive in roomTypePageView.js-->
 </div>

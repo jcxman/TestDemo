@@ -1,0 +1,24 @@
+{
+      "iconography" : {
+		"1" {
+			"name" : "icon1",
+			"image" : "img/custom-icon1"
+		},
+		"2" {
+			"name" : "icon1",
+			"image" : "img/custom-icon1"
+		},
+		"3" {
+			"name" : "icon1",
+			"image" : "img/custom-icon1"
+		},
+		"4" {
+			"name" : "icon1",
+			"image" : "img/custom-icon1"
+		},
+		"5" {
+			"name" : "icon1",
+			"image" : "img/custom-icon1"
+		},
+      }
+}

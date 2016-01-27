@@ -1,0 +1,62 @@
+<div class="assetspanel">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <!--the panel head and panel body of the 1st part:assets panel,starts from here, the panel body is not collapse-->
+        <a class="panel-title" data-parent="#accordion" href="#accordionOne">
+          Assets Panel
+        </a>
+      </div>
+      <div id="accordionOne">
+        <div class="panel-body">
+          <div class="assetspanelInput"><input type="search" placeholder="Search by tags,file names or status"></div>
+        </div>
+      </div>
+
+      <!--the panel head and panel body of the 2nd part:Room Types Panel,starts from here, the panel body is collapse-->
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-parent="#accordion" href="#accordionTwo">
+            Room Types
+          </a>
+        </h4>
+      </div>
+      <div id="accordionTwo">      <!-- panel body -->
+        <div class="panel-body">
+          <div class="panel-body">
+            <input type="file">
+          </div>
+          <div class="assetsLabel">
+            <div id="assetsLabelbtn">
+              <span><a href="">Size</a></span>&nbsp&nbsp&nbsp&nbsp
+              <span><a href="">Detail Images</a></span>&nbsp&nbsp&nbsp&nbsp
+              <span><a href="">Hero Images</a></span>
+            </div>
+            <br>
+            <div ng-repeat="n in length">
+              <div class="assetsLabelLine">
+                <div class="assetsLabelImage"></div>
+                &nbsp&nbsp&nbsp&nbsp
+                <div class="assetsLabelLabel">Assets Label</div>
+                &nbsp&nbsp&nbsp&nbsp
+                <div class="dropdown assetsLabelDropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                          data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="true">
+                    Available actions
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Remove Image</a></li>
+                    <li><a href="#">Edit Image Label</a></li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
